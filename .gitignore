@@ -6,3 +6,11 @@ yolo_trt/*/x64
 *.dll
 *.log
 *.tlog/
+*.pch
+*.obj
+*.pdb
+*.dll
+*.log
+*.tlog/
+/yolo_trt/x64/
+.vs/
