@@ -1,0 +1,62 @@
+﻿  pch.cpp
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include\NvInfer.h(6125,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  dllmain.cpp
+  yolo_detect.cpp
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(95,10): warning C4244: “初始化”: 从“const int”转换到“float”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(96,10): warning C4244: “初始化”: 从“const int”转换到“float”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(105,13): warning C4244: “=”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(105,13): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(105,13): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(105,13): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(105,13): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(106,13): warning C4244: “=”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(106,13): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(106,13): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(106,13): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(106,13): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,41): warning C4244: “参数”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,41): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,41): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,41): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,41): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,32): warning C4244: “参数”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,32): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,32): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,32): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(112,32): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,53): warning C4244: “参数”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,53): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,53): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,53): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,53): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,44): warning C4244: “参数”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,44): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,44): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,44): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,44): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,39): warning C4244: “参数”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,39): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,39): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,39): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,39): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,33): warning C4244: “参数”: 从“float”转换到“_Tp”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,33): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,33): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,33): warning C4244:             _Tp=int
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(114,33): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(123,32): warning C4129: “w：: 不可识别的字符转义序列
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(123,32): warning C4129: “y：: 不可识别的字符转义序列
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244: “=”: 从“_Tp”转换到“_Ty”，可能丢失数据
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:         with
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:             _Tp=double
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:         ]
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:         and
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:         [
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:             _Ty=float
+F:\VS\yolo_tensorrt\yolo_trt\yolo_trt\yolo_detect.cpp(183,45): warning C4244:         ]
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 149 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  yolo_trt.vcxproj -> F:\VS\yolo_tensorrt\yolo_trt\x64\Release\yolo_trt.dll
