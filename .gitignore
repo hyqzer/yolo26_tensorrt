@@ -1,0 +1,8 @@
+*.pch
+yolo_trt/x64/
+yolo_trt/*/x64
+*obj
+*.pdb
+*.dll
+*.log
+*.tlog/
