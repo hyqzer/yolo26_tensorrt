@@ -6,6 +6,7 @@
 #include <fstream>
 
 #include "pch.h"
+#include "yolo_detect.h"
 
 using namespace std;
 using namespace cv;
@@ -118,13 +119,15 @@ Mat letterbox(const Mat src, int target_w, int target_h, float& scale, Point2i& 
 
 
 
-int yolo_infer() {
-    const string onnx_path = "G:\\weight\\yolo26s.onnx";
-    const string engine_path = "G:\weight\yolo26s.enginge";
-    const int IMG_h = 640;
-    const int IMG_w = 640;
-    const float CONF_THRESH = 0.5;
-    const float IOU_THRESH = 0.5;
+int yolo_infer(
+    const char* IMG_PATH,
+    const char* onnx_path,
+    const char* engine_path,
+    int IMG_h,
+    int IMG_w,
+    float CONF_THRESH,
+    float IOU_THRESH
+) {
 
     // 加载/构建 engine
     nvinfer1::ICudaEngine* engine = nullptr;
@@ -161,7 +164,7 @@ int yolo_infer() {
 
     // 读取图片
 
-    Mat img = imread("C:\\Users\\hyqer\\Desktop\\img.jpg");
+    Mat img = imread(IMG_PATH);
     if (img.empty()) {
         cout << "image wrong" << endl;
         return -1;
@@ -179,8 +182,8 @@ int yolo_infer() {
     for (int c = 0; c < 3; c++) {
         for (int y = 0; y < IMG_h; y++) {
             for (int x = 0; x < IMG_w; x++) {
-                host_input[c * IMG_h * IMG_w + y * IMG_h + x] =
-                    letter.at<Vec3d>(y, x)[c];
+                host_input[c * IMG_h * IMG_w + y * IMG_w + x] =
+                    letter.at<Vec3b>(y, x)[c]/255.0f;
             }
         }
     }
@@ -238,4 +241,10 @@ int yolo_infer() {
     }
     cout << boxes.size() << endl;
 
+    // 释放资源
+    cudaFree(d_input);
+    cudaFree(d_output);
+    ctx->destroy();
+    engine->destroy();
+    return 0;
 }
