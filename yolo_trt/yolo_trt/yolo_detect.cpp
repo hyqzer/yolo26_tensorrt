@@ -20,12 +20,12 @@ public:
 	}
 }gLogger;
 
-// 检查结构体
-struct DetectBox {
-	float x1, y1, x2, y2;
-	float conf;
-	int cls;
-};
+//// 检查结构体
+//struct DetectBox {
+//	float x1, y1, x2, y2;
+//	float conf;
+//	int cls;
+//};
 
 // 构建 TensorRT Engine
 nvinfer1::ICudaEngine* buildEngineFromOnnx(const std::string& onnxPath, bool useFP16 = true)
@@ -123,6 +123,7 @@ int yolo_infer(
     const char* IMG_PATH,
     const char* onnx_path,
     const char* engine_path,
+    DetectBox* result,
     int IMG_h,
     int IMG_w,
     float CONF_THRESH,
@@ -239,6 +240,9 @@ int yolo_infer(
         boxes.push_back({ x1, y1, x2, y2, max_conf, cls_id });
 
     }
+    for (int i = 0; i < boxes.size(); i++) {
+        result[i] = boxes[i];
+    }
     cout << boxes.size() << endl;
 
     // 释放资源
@@ -246,5 +250,5 @@ int yolo_infer(
     cudaFree(d_output);
     ctx->destroy();
     engine->destroy();
-    return 0;
+    return (int)(boxes.size());
 }
